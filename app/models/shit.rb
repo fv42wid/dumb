@@ -1,0 +1,2 @@
+class Shit < ApplicationRecord
+end

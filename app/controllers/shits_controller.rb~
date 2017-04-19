@@ -1,7 +1,0 @@
-class ShitsController < ApplicationController
-
-  def index
-    @shits = Shits.Last(10)
-  end
-
-end

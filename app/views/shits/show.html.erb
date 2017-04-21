@@ -3,13 +3,16 @@
     <h1><%= @shit.title %></h1>
     <div class="panel panel-default">
       <div class="panel-body">
-	<%= @shit.description %>
+	<%= simple_format @shit.description %>
       </div>
       <div class="panel-footer">
 	<small>
 	  <%= @shit.user.username || @shit.user.email %> - 
 	  <%= time_ago_in_words(@shit.created_at) %>
 	</small>
+	<div class="pull-right">
+	  <span class="glyphicon glyphicon-heart"></span>
+	</div>
       </div>
     </div>
     <%= link_to 'Back to List', shits_path %>

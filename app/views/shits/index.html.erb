@@ -1,5 +1,8 @@
 <div class="row">
   <div class="col-md-8">
     <h1>The Dumb Shit</h1>
+    <% if @shits.any? %>
+      <%= render @shits %>
+    <% end %>
   </div>
 </div>

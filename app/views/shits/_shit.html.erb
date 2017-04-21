@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <a href="<%= shit_path(shit) %>">
+      <h3 class="panel-title">
+	<%= shit.title %>
+      </h3>
+    </a>
+  </div>
+  <div class="panel-body">
+    <%= shit.description %>
+  </div>
+  <div class="panel-footer">
+    <small>
+      <%= shit.user.username %> - 
+      <%= time_ago_in_words(shit.created_at) %> ago
+    </small>
+  </div>
+</div>
+

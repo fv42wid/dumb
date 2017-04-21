@@ -1,0 +1,21 @@
+<%= form_for(@shit, :html => {:class => 'form-horizontal'}) do |f| %>
+  <div class="form-group">
+    <%= f.label :title, class: 'col-md-2 control-label' %>
+    <div class="col-md-10">
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description, class: 'col-md-2 control-label' %>
+    <div class="col-md-10">
+      <%= f.text_area :description, class: 'form-control', rows: '3' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-10 col-md-offset-2">
+      <%= f.submit 'Create', class: 'btn btn-default' %>
+    </div>
+  </div>
+<% end %>

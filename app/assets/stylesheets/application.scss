@@ -20,3 +20,12 @@
 .comment-form {
   margin-top: 30px;
 }
+
+//devise messages
+.alert-alert {
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text)
+}
+
+.alert-notice {
+  @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text)
+}

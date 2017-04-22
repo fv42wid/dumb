@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :shits do 
     resources :comments, only: [:create, :destroy]
-    resource :like, only: [:create, :destroy]
+    resource :like, only: [:create, :destroy], module: :shits
   end
 
   root 'shits#index'

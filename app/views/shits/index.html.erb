@@ -1,5 +1,10 @@
 <div class="row">
   <div class="col-md-8">
+    <% if user_signed_in? %>
+      <div class="pull-right new-button">
+	<%= link_to 'Create New', new_shit_path, class: 'btn btn-success' %>
+      </div>
+    <% end %>
     <h1>The Dumb Shit</h1>
     <% if @shits.any? %>
       <%= render @shits %>

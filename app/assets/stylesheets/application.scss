@@ -29,3 +29,8 @@
 .alert-notice {
   @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text)
 }
+
+//misc
+.new-button {
+  margin-top: 20px;
+}

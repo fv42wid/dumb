@@ -1,5 +1,10 @@
 <div class="row">
   <div class="col-md-8">
+    <% if user_signed_in? && current_user == @shit.user %>
+      <div class="pull-right new-button">
+	<%= link_to 'Edit', edit_shit_path(@shit), class: 'btn btn-primary' %>
+      </div>
+    <% end %>
     <h1><%= @shit.title %></h1>
     <div class="panel panel-default">
       <div class="panel-body">
